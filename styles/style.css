@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Common Styles */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Work Sans", serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* Header Style */
+
+
+
+/* Nav Style */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
