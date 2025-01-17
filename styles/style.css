@@ -32,6 +32,24 @@ a {
     color: rgb(114, 114, 114);
 }
 
+
+.section-title {
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.section-dis {
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 24px 0px;
+    max-width: 540px;
+
+}
+
+
+
+
 /* Header Style */
 
 header {
@@ -125,26 +143,40 @@ main>section {
 
 }
 
-.team-feature {
-    margin-left: 100px;
-    max-width: 530px;
+
+/* Some Fact Related Styles */
+
+.fact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10%;
 
 }
 
-.feature-title {
-    font-weight: 700;
+
+.fact {
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.fact-number {
+    color: rgb(66, 66, 66);
     font-size: 2.8rem;
-    
+    font-weight: 600;
+    margin: 5px 10px auto;
 }
 
-.feature-dis {
+.fact-name {
     color: rgb(114, 114, 114);
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 24px 0px;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
-
-
 
 
 
@@ -177,7 +209,8 @@ main>section {
 @media screen and (max-width: 576px) {
 
     nav,
-    .nav-menu , .teams{
+    .nav-menu,
+    .teams {
         flex-direction: column;
     }
 
@@ -188,7 +221,7 @@ main>section {
     .banner-title {
         font-size: 2rem;
     }
-    
+
 
     .brand {
         font-size: 2rem;
@@ -197,7 +230,7 @@ main>section {
     .team-feature {
         margin-left: 0px;
         margin-top: 24px;
-    
+
     }
 
 
@@ -206,7 +239,7 @@ main>section {
 
 /* Medium Device */
 
-@media  screen and (min-width: 577px) and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
     .brand {
         font-size: 2rem;
     }
@@ -219,6 +252,7 @@ main>section {
     .banner-title {
         font-size: 2rem;
     }
+
     .banner-dis {
         font-size: 0.8rem;
     }
@@ -226,21 +260,21 @@ main>section {
     nav a {
         font-size: 0.8rem;
     }
-    
+
     .nav-menu {
         gap: 10px;
     }
-    
-    
 
-    .teams{
+
+
+    .teams {
         flex-direction: column;
     }
 
     .team-feature {
         margin-left: 0px;
         margin-top: 24px;
-    
+
     }
-    
+
 }
