@@ -233,13 +233,20 @@ main>section {
 
     }
 
+    .fact-container , .teams-img-container{
+        grid-template-columns: 1fr;
+
+    }
+
+
+
 
 }
 
 
 /* Medium Device */
 
-@media screen and (min-width: 577px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
     .brand {
         font-size: 2rem;
     }
@@ -274,6 +281,11 @@ main>section {
     .team-feature {
         margin-left: 0px;
         margin-top: 24px;
+
+    }
+
+    .fact-container , .teams-img-container {
+        grid-template-columns: repeat(2, 1fr);
 
     }
 
